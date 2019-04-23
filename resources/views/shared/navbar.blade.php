@@ -6,6 +6,7 @@
         </a>
 
         <div class="right menu">
+            @auth
             <div class="item">
                 <form method="POST" action="{{ route("logout") }}" class="ui form">
                     @csrf
@@ -17,6 +18,7 @@
                     </div>
                 </form>
             </div>
+            @endauth
         </div>
     </div>
 </div>
